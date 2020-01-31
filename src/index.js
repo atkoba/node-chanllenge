@@ -13,7 +13,7 @@ router
     ctx.body = 'hello world'
   })
 
-  //Price DB
+  // Price DB
 
   .get('/pricing-models', api.getAllPricingModels)
   .post('/pricing-models', api.createPricingModel)
@@ -25,6 +25,13 @@ router
   .post('/pricing-models/:pmId/prices', api.createPricingModelPricings)
 
   .delete('/pricing-models/:pmId/prices/:priceId', api.deletePricingModelPricing)
+
+  // Machine DB
+
+  .get('/machines/:machineId/prices', api.getMachineModelPricings)
+  .put('/machines/:machineId/prices/:pmId', api.putMachineModelPricingModel)
+  
+  .delete('/machines/:machineId/prices/:priceId', api.deleteMachineModelPricing)
 
 app
   .use(router.routes())

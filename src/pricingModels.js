@@ -25,6 +25,10 @@ function checkvalidatePriceId (pmId, priceId) {
     return false;
 }
 
+function findDefaultPriceModel() {
+    return db.getData('/default_pricing');
+}
+
 function findAllPricingModels() {
     return db.getData('/');
 }
@@ -63,6 +67,7 @@ function removePricingModelPring(arr, priceId) {
 module.exports = {
     checkvalidatePriceId,
     checkValidate,
+    findDefaultPriceModel,
     findAllPricingModels,
     createNewPricingModel,
     findPricingModel,
