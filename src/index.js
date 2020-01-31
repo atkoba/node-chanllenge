@@ -33,7 +33,7 @@ router
   
   .delete('/machines/:machineId/prices/:priceId', api.deleteMachineModelPricing)
 
-app
+module.exports = app
   .use(router.routes())
   .listen(PORT, () =>
     console.log(`Server listening on port ${PORT}`)

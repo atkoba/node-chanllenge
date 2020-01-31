@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tests Delete /pricing-models/:pm-id/prices/:price-id after remove get pricing model 1`] = `"{\\"id\\":\\"48e7d94d-a9ea-4fb2-a458-b2e2be6d3a6e\\",\\"name\\":\\"Long Play\\",\\"pricing\\":[{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]}"`;
+
+exports[`tests GET /machines/:machine-id/prices does not found a machine-id then responds with not found 1`] = `"Not Found"`;
+
+exports[`tests GET /machines/:machine-id/prices does not have a price model configured then the default model from prices.json is returned 1`] = `"{\\"default_pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}],\\"3ba92095-3203-4888-a464-3c7d5d9acd7e\\":{\\"id\\":\\"3ba92095-3203-4888-a464-3c7d5d9acd7e\\",\\"name\\":\\"Super Value Option\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20}]},\\"4d40de8f-68f8-4160-a83a-665dbc92d154\\":{\\"id\\":\\"4d40de8f-68f8-4160-a83a-665dbc92d154\\",\\"name\\":\\"test1\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]},\\"48e7d94d-a9ea-4fb2-a458-b2e2be6d3a6e\\":{\\"id\\":\\"48e7d94d-a9ea-4fb2-a458-b2e2be6d3a6e\\",\\"name\\":\\"Long Play\\",\\"pricing\\":[{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]},\\"8204a140-6ac3-4a49-83d9-b2050571d354\\":{\\"id\\":\\"8204a140-6ac3-4a49-83d9-b2050571d354\\"}}"`;
+
+exports[`tests GET /machines/:machine-id/prices return the pricing model and price configurations set for a given machine 1`] = `"{\\"id\\":\\"3ba92095-3203-4888-a464-3c7d5d9acd7e\\",\\"name\\":\\"Super Value Option\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20}]}"`;
+
+exports[`tests GET /pricing-models/:pm-id get an individual pricing model 1`] = `false`;
+
+exports[`tests GET /pricing-models/:pm-id/prices returns the prices configured for a specific pricing model 1`] = `"{\\"id\\":\\"4d40de8f-68f8-4160-a83a-665dbc92d154\\",\\"name\\":\\"test1\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]}"`;
+
+exports[`tests POST /pricing-models/:pm-id/prices after update get pricing model 1`] = `"{\\"id\\":\\"48e7d94d-a9ea-4fb2-a458-b2e2be6d3a6e\\",\\"name\\":\\"Long Play\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]}"`;
+
+exports[`tests PUT /machines/:machine-id/prices/:pm-id return the pricing model and price configurations set for a given machine 1`] = `"{\\"id\\":\\"3ba92095-3203-4888-a464-3c7d5d9acd7e\\",\\"name\\":\\"Super Value Option\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20}]}"`;
+
+exports[`tests PUT /pricing-models/:pm-id after update get pricing model 1`] = `"{\\"id\\":\\"4d40de8f-68f8-4160-a83a-665dbc92d154\\",\\"name\\":\\"test1\\",\\"pricing\\":[{\\"price\\":3,\\"name\\":\\"10 minutes\\",\\"value\\":10},{\\"price\\":5,\\"name\\":\\"20 minutes\\",\\"value\\":20},{\\"price\\":15,\\"name\\":\\"60 minutes\\",\\"value\\":60}]}"`;
+
+exports[`tests PUT /pricing-models/:pm-id updates an existing pricing model meta-data 1`] = `false`;
