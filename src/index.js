@@ -9,9 +9,13 @@ const router = new Router()
 
 router
   .use(bodyParser())
-  .get('/', (ctx, next) => {
-    ctx.body = 'hello world'
+  .get('/welcome/page1', (ctx, next) => {
+    ctx.body = 'welcome koba1'
   })
+
+  .get('/welcome/page2', (ctx, next) => {
+      ctx.body = 'welcome koba2'
+    })
 
   // Price DB
 
@@ -30,10 +34,11 @@ router
 
   .get('/machines/:machineId/prices', api.getMachineModelPricings)
   .put('/machines/:machineId/prices/:pmId', api.putMachineModelPricingModel)
-  
+
   .delete('/machines/:machineId/prices/:priceId', api.deleteMachineModelPricing)
 
-module.exports = app
+
+  module.exports = app
   .use(router.routes())
   .listen(PORT, () =>
     console.log(`Server listening on port ${PORT}`)
